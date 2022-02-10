@@ -1,4 +1,4 @@
-# Keyboard  : KeyFuda01
+# Keyboard  : KeyFuda01 (18 keys)
 # Controller: SparkFun Pro Micro RP2040 (DEV-18288)
 
 # Initialize a Keyboard ########################################################
