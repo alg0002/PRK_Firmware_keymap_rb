@@ -18,6 +18,22 @@ kbd.init_direct_pins(
       5,   26,  27 ]
 )
 
+# rgb
+# Initialize RGBLED with pin, underglow_size, backlight_size and is_rgbw.
+rgb = RGB.new(
+  17,   # pin number
+  1,    # size of underglow pixel
+  0,    # size of backlight pixel
+  false # 32bit data will be sent to a pixel if true while 24bit if false
+)
+rgb.effect = :swirl
+rgb.speed      = 22  # 1-31  / default: 22
+rgb.hue        = 240 # 0-347?/ default: 0
+rgb.saturation = 100 # 0-100 / default: 100
+rgb.max_value  = 3   # 1-31  / default: 13
+
+kbd.append rgb
+
 # Define layers ###########################
 # default layer should be added at first
 kbd.add_layer :default, %i(
