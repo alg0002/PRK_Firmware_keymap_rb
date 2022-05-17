@@ -96,8 +96,6 @@ encoder_L4.counterclockwise do
 end
 kbd.append encoder_L4
 
-
-
 rgb = RGB.new(
   0,    # pin number
   0,    # size of underglow pixel
@@ -108,7 +106,7 @@ rgb.effect     = :breath
 rgb.speed      = 31  # 1-31  / default: 22
 rgb.hue        = 10  # 0-100 / default: 0
 rgb.saturation = 100 # 0-100 / default: 100
-rgb.max_value  = 10  # 1-31  / default: 13
+rgb.value      = 10  # 1-31  / default: 13
 kbd.append rgb
 
 kbd.start!
