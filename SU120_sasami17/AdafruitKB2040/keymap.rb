@@ -94,8 +94,8 @@ kbd.define_composite_key :LALT_3,    %i(KC_3     KC_LALT)
 kbd.define_composite_key :LC_LS_A,   %i(KC_LCTL  KC_LSFT  KC_A)
 kbd.define_composite_key :LC_LS_C,   %i(KC_LCTL  KC_LSFT  KC_C)
 kbd.define_composite_key :LC_LS_L,   %i(KC_LCTL  KC_LSFT  KC_L)
-kbd.define_mode_key :TO_RAISE, [ Proc.new { rgb.to_raise_color   kbd.lock_layer(:raise)  }, nil, 300, nil ]
-kbd.define_mode_key :TO_DEFLT, [ Proc.new { rgb.to_default_color kbd.lock_layer(:default)}, nil, 300, nil ]
+kbd.define_mode_key :TO_RAISE, [ Proc.new { rgb.to_raise_color();   kbd.lock_layer(:raise)  }, nil, 300, nil ]
+kbd.define_mode_key :TO_DEFLT, [ Proc.new { rgb.to_default_color(); kbd.lock_layer(:default)}, nil, 300, nil ]
 
 # Start! #######################################################################
 kbd.start!
